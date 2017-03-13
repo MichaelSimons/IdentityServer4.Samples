@@ -1,6 +1,6 @@
-FROM microsoft/dotnet:1.1.0-sdk-projectjson
+FROM microsoft/dotnet:1.1.1-sdk
 
-COPY ./src/Api/project.json /app/
+COPY ./src/Api/Api.csproj /app/
 COPY ./NuGet.Config /app/
 WORKDIR /app/
 RUN dotnet restore
